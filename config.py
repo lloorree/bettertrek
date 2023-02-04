@@ -4,8 +4,14 @@ from typing import Dict
 import yaml
 
 SERIES: Dict[str, str] = {
-    'The Next Generation': 'NextGen'
+    'The Next Generation': 'NextGen',
+    'Deep Space Nine': 'DS9',
+    'The Original Series': 'StarTrek',
+    'Voyager': 'Voyager',
+    'Enterprise': 'Enterprise',
+    'Andromeda': 'Andromeda', 
 }
+
 
 
 class Config:
