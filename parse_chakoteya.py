@@ -43,7 +43,7 @@ class Downloader:
             # I care more about making it clear what is being done and why than efficiency here, so there is a lot of duplicate iterating.
             script_table = first_table(episode_url)
             if script_table is None:
-            	continue
+                continue
             script = script_table.text
             # Scenes are delimited by bolded bracketed text with newlines on either side, ex: [Bridge]
             scenes: [str] = split("\[.+\]\n", script)
