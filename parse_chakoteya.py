@@ -41,7 +41,10 @@ class Downloader:
         for episode_url in link_iterator(series_url, self.primary_series, self.base_url, self.episode):
             logging.info('Parsing episode from %s.', episode_url)
             # I care more about making it clear what is being done and why than efficiency here, so there is a lot of duplicate iterating.
-            script = first_table(episode_url).text
+            script_table = first_table(episode_url)
+            if script_table is None:
+            	continue
+            script = script_table.text
             # Scenes are delimited by bolded bracketed text with newlines on either side, ex: [Bridge]
             scenes: [str] = split("\[.+\]\n", script)
             for scene in scenes:
