@@ -2,12 +2,14 @@ logging: 'INFO'
 
 CHAKOTEYA:
   url_root: http://www.chakoteya.net/
+  # Use the normal case of the uppercase in the scripts, e.g. for PICARD -> Picard
   character_name: 'Data'
+  # See config.py for list
   primary_series: 'The Next Generation'
   # This doesn't do anything right now.
   include_movies: false
-  # Uncomment to use a specific episode. Otherwise will do full series.
-  # episode: 'Datalore'
+  # Uncomment to use a specific episode, or comment it out to do the full series.
+  episode: 'Datalore'
 
 # None of this does anything right now
 CAI:
