@@ -1,0 +1,22 @@
+logging: 'INFO'
+
+CHAKOTEYA:
+  url_root: http://www.chakoteya.net/
+  character_name: 'Data'
+  primary_series: 'The Next Generation'
+  # This doesn't do anything right now.
+  include_movies: false
+  # Uncomment to use a specific episode. Otherwise will do full series.
+  # episode: 'Datalore'
+
+# None of this does anything right now
+CAI:
+  external_id: 'MfvEHM7-c1fagC3YxIRgl24H7DCRVMcHPkZiXpW-tI4'
+  name: 'Data Soong'
+  short_description: 'Lieutenant Commander Data Soong of the Federation starship U.S.S. Enterprise'
+  greeting: 'Greetings, I am Data. My current programming indicates I am the operations officer of the U.S.S. Enterprise, NCC-1701-D, with a rank of Lieutenant Commander. Is there something you wish to discuss with me?'
+  long_description: 'Secretly identifies as a catboy.'
+  # PUBLIC, UNLISTED, or PRIVATE
+  visibility: 'UNLISTED'
+  email: 'PLACEHOLDER'
+  password: 'PLACEHOLDER'
